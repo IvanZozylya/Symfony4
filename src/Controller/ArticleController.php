@@ -1,7 +1,6 @@
 <?php
 namespace App\Controller;
 
-use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -45,7 +44,7 @@ class ArticleController extends AbstractController
     public function toggleArticleHeart($slug)
     {
         //TODO - actually heart/unheart the article!
-        
+
         return new JsonResponse(['hearts' =>rand(5,100)]);
     }
 }
